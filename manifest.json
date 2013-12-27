@@ -1,0 +1,22 @@
+{
+  "name": "Smooth Now Browsing Extension",
+  "manifest_version": 2,
+  "version": "0.1.1",
+  "description": "1 click tweet your watching web site.",
+  "browser_action" : {
+    "default_icon": "icon-19.png"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["jquery-1.10.2.min.js", "oauth.js", "sha1.js", "background.js"]
+  },
+  "permissions": [
+    "notifications",
+    "tabs",
+    "background",
+    "https://api.twitter.com/"
+  ],
+  "web_accessible_resources": [
+    "icon-48.png"
+  ]
+}
